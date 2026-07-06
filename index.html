@@ -1,0 +1,611 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <!-- PWA -->
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Danial J" />
+    <meta
+        name="apple-mobile-web-app-status-bar-style"
+        content="black-translucent" />
+
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="./assets/images/icons/icon-6.png" />
+    <link
+        rel="apple-touch-icon"
+        sizes="152x152"
+        href="./assets/images/icons/icon-6.png" />
+    <link
+        rel="apple-touch-icon"
+        sizes="120x120"
+        href="./assets/images/icons/icon-6.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/images/icons/icon-6.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/images/icons/icon-6.png" />
+
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="192x192"
+        href="./assets/images/icons/icon-6.png" />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="./assets/images/icons/icon-6.png" />
+    <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="./assets/images/icons/icon-6.png" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/icons/icon-6.png" />
+    <link rel="manifest" href="./assets/pwa/manifest.json" />
+    <title>رزومه  دانیال   جمشیدی  | برنامه‌نویس ارشد فول‌استک</title>
+    <!-- SEO Meta -->
+    <meta name="description" content="رزومه و نمونه کارهای  دانیال   جمشیدی ، برنامه‌نویس ارشد فول‌استک و توسعه‌دهنده وب. تخصص در React، JS و php. بیش از 3 سال تجربه.">
+    <meta name="keywords" content=" دانیال   جمشیدی , برنامه نویس, فول استک, رزومه, استخدام, React, JS, PHP, تهران, فریلنسر">
+    <meta name="author" content="Danial Jamshidi">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="رزومه  دانیال   جمشیدی  | برنامه‌نویس ارشد">
+    <meta property="og:description" content="توسعه‌دهنده فول‌استک با 3 سال تجربه. React، JS، PHP.">
+    <meta property="og:type" content="profile">
+    <meta property="og:image" content="./assets/images/icons/icon-6.png" />
+    <meta property="og:locale" content="fa_IR">
+    <meta property="og:site_name" content=" دانیال   جمشیدی ">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="رزومه  دانیال   جمشیدی ">
+    <meta name="twitter:description" content="برنامه‌نویس ارشد فول‌استک | React, JS, PHP">
+    <link rel="canonical" href="https://danialjamshidi.github.io/">
+    <link rel="shortcut icon" href="./assets/images/icons/icon-6.png" type="image/x-icon">
+    <link rel="preload" href="./assets/fonts/vazir/Vazir-Medium-FD-WOL.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/packages/bootstrap-icons.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="./assets/packages/bootstrap-icons.min.css">
+    </noscript>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": " دانیال   جمشیدی ",
+            "alternateName": " دانیال   جمشیدی ",
+            "url": "https://danialjamshidi.github.io/",
+            "image": "./assets/images/icons/icon-6.png",
+            "jobTitle": "برنامه‌نویس ارشد فول‌استک",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "فریلنسر"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "تهران",
+                "addressCountry": "IR"
+            },
+            "email": "danialjamshidi8877@gmail.com",
+            "telephone": " 09233233725 ",
+            "knowsAbout": ["Front-end Development", "Back-end Development", "React", "JS", "php", "WebDeveloper"],
+            "sameAs": [
+                "https://github.com/Danial8877",
+                "https://linkedin.com/in/danialjamshidi"
+            ]
+        }
+    </script>
+    <link rel="stylesheet" href="./assets/css/bundle.min.css">
+</head>
+
+<body>
+<!-- PRELOADER -->
+<div id="preloader">
+    <div class="preloader-content">
+        <div class="preloader-spinner"></div>
+    </div>
+</div>
+
+<!-- CURSOR GLOW & PARTICLES -->
+<div class="cursor-glow" id="cursorGlow"></div>
+<canvas id="particles-canvas"></canvas>
+
+<!-- NAVIGATION -->
+<nav class="navbar" id="navbar">
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">خانه</a></li>
+        <li><a href="#about">درباره من</a></li>
+        <li><a href="#skills">مهارت‌ها</a></li>
+                <li><a href="#projects">پروژه‌ها</a></li>
+        <li><a href="#education">تحصیلات</a></li>
+        <li><a href="#contact">تماس</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+    </div>
+    <a href="#hero" class="nav-logo"><img src="./assets/images/icons/icon-2.png" alt="image-icon-1"></a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-content">
+        <h1> دانیال  <span class="gold"> جمشیدی </span></h1>
+        <p class="hero-subtitle">برنامه‌نویس ارشد وب و توسعه‌دهنده فول‌استک</p>
+        <div class="hero-typed-text"><span id="typedText"></span><span class="cursor-blink">|</span></div>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">مشاهده پروژه‌ها</a>
+            <a href="#contact" class="btn btn-outline">تماس با من</a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="container">
+        <div class="section-title reveal">
+            <h2>درباره من</h2>
+            <p>یک نگاه کوتاه به زندگی حرفه‌ای من</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-image-wrapper reveal">
+                <div class="about-image"><img src="./assets/images/icons/icon-1.jpg?version=1" alt=" دانیال  جمشیدی " loading="lazy"></div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">سال تجربه</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="2">0</div>
+                        <div class="stat-label">پروژه موفق</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-text reveal">
+                <h3>سلام، من <span> دانیال  جمشیدی </span> هستم</h3>
+                <p>برنامه‌نویس فول‌استک با بیش از 3 سال تجربه در توسعه وب و وب اپلیکیشن‌های مدرن. عاشق کدنویسی تمیز، طراحی خلاقانه و حل مسائل پیچیده با راه‌حل‌های ساده.</p>
+                <p>تخصص اصلی من در فرانت‌اند با React و Vue و همچنین بک‌اند با Node.js و php است. همیشه به دنبال یادگیری تکنولوژی‌های جدید و بهبود مهارت‌های خود هستم.</p>
+                <div class="about-info">
+                    <div class="info-item"><span class="icon"><i class="bi bi-geo-alt-fill"></i></span>
+                        <div>
+                            <div class="label">موقعیت</div>
+                            <div class="value"> تهران </div>
+                        </div>
+                    </div>
+                    <div class="info-item"><span class="icon"><i class="bi bi-briefcase-fill"></i></span>
+                        <div>
+                            <div class="label">نوع کار</div>
+                            <div class="value"> تمام وقت / پاره وقت </div>
+                        </div>
+                    </div>
+                    <div class="info-item"><span class="icon"><i class="bi bi-mortarboard-fill"></i></span>
+                        <div>
+                            <div class="label">سن</div>
+                            <div class="value"> 17 </div>
+                        </div>
+                    </div>
+                    <div class="info-item"><span class="icon"><i class="bi bi-globe2"></i></span>
+                        <div>
+                            <div class="label">زبان</div>
+                            <div class="value"> فارسی / انگلیسی </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <div class="container">
+        <div class="section-title reveal">
+            <h2>مهارت‌های من</h2>
+            <p>تکنولوژی‌ها و ابزارهایی که با آن‌ها کار می‌کنم</p>
+        </div>
+        <div class="skills-grid">
+            <!-- Frontend -->
+            <div class="skill-category reveal">
+                <div class="skill-category-header">
+                    <div class="skill-category-icon"><i class="bi bi-code-slash"></i></div>
+                    <div class="skill-category-title">فرانت‌اند</div>
+                </div>
+                <!-- 1. HTML5 -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">HTML5</span><span class="skill-percent">100%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="100"></div>
+                    </div>
+                </div>
+                <!-- 2. CSS3 -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">CSS3</span><span class="skill-percent">100%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="100"></div>
+                    </div>
+                </div>
+                <!-- 3. Tailwind CSS -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">Tailwind CSS</span><span class="skill-percent">90%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <!-- 4. Bootstrap -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">Bootstrap</span><span class="skill-percent">85%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <!-- 5. SASS/SCSS -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">SASS/SCSS</span><span class="skill-percent">90%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <!-- 6. JavaScript -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">JavaScript</span><span class="skill-percent">95%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                </div>
+                <!-- 7. TypeScript -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">TypeScript</span><span class="skill-percent">90%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <!-- 8. jQuery -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">jQuery</span><span class="skill-percent">90%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <!-- 9. Alpine.js -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">Alpine.js</span><span class="skill-percent">85%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <!-- 10. Vue.js -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">Vue.js</span><span class="skill-percent">90%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <!-- 11. Nuxt.js -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">Nuxt.js</span><span class="skill-percent">95%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                </div>
+                <!-- 12. Vuetify -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">Vuetify</span><span class="skill-percent">40%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="40"></div>
+                    </div>
+                </div>
+                <!-- 13. Vite -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">Vite</span><span class="skill-percent">95%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                </div>
+                <!-- 14. Webpack -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">Webpack</span><span class="skill-percent">40%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="40"></div>
+                    </div>
+                </div>
+                <!-- 15. PWA -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">PWA ( Work With Package )</span><span class="skill-percent">75%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                </div>
+                <!-- 16. React.js -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">React.js</span><span class="skill-percent">90%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <!-- 17. Next.js -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">Next.js</span><span class="skill-percent">95%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="skill-category reveal">
+                <div class="skill-category-header">
+                    <div class="skill-category-icon"><i class="bi bi-server"></i></div>
+                    <div class="skill-category-title">بک‌اند</div>
+                </div>
+                <!-- 18. Node.js -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">Node.js</span><span class="skill-percent">45%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="45"></div>
+                    </div>
+                </div>
+                <!-- 19. NestJS -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">NestJS</span><span class="skill-percent">75%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="75"></div>
+                    </div>
+                </div>
+                <!-- 20. PHP -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">PHP</span><span class="skill-percent">95%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                </div>
+                <!-- 21. Laravel -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">Laravel</span><span class="skill-percent">0%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="0"></div>
+                    </div>
+                </div>
+                <!-- 22. SQL -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">SQL</span><span class="skill-percent">85%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- ابزارها -->
+            <div class="skill-category reveal">
+                <div class="skill-category-header">
+                    <div class="skill-category-icon"><i class="bi bi-tools"></i></div>
+                    <div class="skill-category-title">ابزارها</div>
+                </div>
+                <!-- 24. RESTful API Development -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">RESTful API</span><span class="skill-percent">85%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <!-- 25. Postman -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">Postman</span><span class="skill-percent">90%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <!-- 26. GIT GitHub -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">GIT / GitHub</span><span class="skill-percent">90%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <!-- 27. Docker -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">Docker</span><span class="skill-percent">0%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="0"></div>
+                    </div>
+                </div>
+                <!-- 28. Basic Deployment & Hosting -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">Deployment & Hosting</span><span class="skill-percent">90%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <!-- 29. Figma -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">Figma</span><span class="skill-percent">60%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="60"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- CMS & Platforms -->
+            <div class="skill-category reveal">
+                <div class="skill-category-header">
+                    <div class="skill-category-icon"><i class="bi bi-window"></i></div>
+                    <div class="skill-category-title">CMS و پلتفرم‌ها</div>
+                </div>
+                <!-- 23. WordPress -->
+                <div class="skill-item">
+                    <div class="skill-header"><span class="skill-name">WordPress</span><span class="skill-percent">0%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="0"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <div class="container">
+                    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <div class="container">
+        <div class="section-title reveal">
+            <h2>پروژه‌های منتخب</h2>
+            <p>نمونه‌ای از بهترین کارهای من</p>
+        </div>
+        <div class="projects-grid">
+                            <div class="project-card reveal">
+                    <div class="project-image"><img src="./assets/images/projects/project-darkhub.ir.png" alt="project-image" style="width: 100%; height: 100%;">
+                        <div class="project-overlay"><a href="https://darkhub.ir/" target="_blank" class="project-link"><i class="bi bi-eye-fill"></i></a></div>
+                    </div>
+                    <div class="project-info">
+                        <h3> دارک هاب وب سایت آموزشی </h3>
+                        <p> سایت دارک هاب یکی از سایت های آموزش برنامه نویسی به صورت آنلاین میباشد، <br> این سایت دارای چندین صفحه میباشد و یکی از سایت های با پیچیدگی بالا میباشد .</p>
+                        <div class="project-tech">
+                                                            <span>HTML</span>
+                                                            <span>CSS</span>
+                                                            <span>JS</span>
+                                                            <span>Tailwind CSS</span>
+                                                            <span>Alpine</span>
+                                                            <span>jQuery</span>
+                                                            <span>SASS</span>
+                                                            <span>PHP</span>
+                                                            <span>MVC</span>
+                                                            <span>MySQL</span>
+                                                    </div>
+                    </div>
+                </div>
+                            <div class="project-card reveal">
+                    <div class="project-image"><img src="./assets/images/projects/project-saketzadeh.ir.png" alt="project-image" style="width: 100%; height: 100%;">
+                        <div class="project-overlay"><a href="https://saketzadeh.ir/" target="_blank" class="project-link"><i class="bi bi-eye-fill"></i></a></div>
+                    </div>
+                    <div class="project-info">
+                        <h3> هلدینگ ساختمانی ساکت زاده </h3>
+                        <p> این سایت درباره معرفی هلدینگ ساختمانی ساکت‌زاده، خدمات معماری و ساختمانی، <br> نمونه پروژه‌های انجام شده در شهر ری، و راه‌های ارتباطی با مجموعه است. </p>
+                        <div class="project-tech">
+                                                            <span>HTML</span>
+                                                            <span>CSS</span>
+                                                            <span>JS</span>
+                                                            <span>Bootstrap</span>
+                                                            <span>PWA</span>
+                                                            <span>PHP</span>
+                                                            <span>MVC</span>
+                                                            <span>MySQL</span>
+                                                    </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</section>
+
+<!-- EDUCATION & CERTS -->
+<section id="education">
+    <div class="container">
+        <div class="section-title reveal">
+            <h2>تحصیلات و گواهینامه‌ها</h2>
+            <p>مدارک علمی و حرفه‌ای من</p>
+        </div>
+        <div class="education-grid reveal">
+                            <div class="edu-card">
+                    <div class="edu-icon"><i class="bi bi-mortarboard-fill"></i></div>
+                    <h3>کلاس یازدهم</h3>
+                    <h4>مدرسه امام حسن مجتبی</h4>
+                    <p> اکنون در رشته علوم انسانی و در یکی از مدارس تهران در حال تحصیل هستم </p><span class="edu-year">1405 - 1404</span>
+                </div>
+                    </div>
+        <div class="section-title reveal" style="margin-top:60px">
+            <h2>گواهینامه‌ها</h2>
+        </div>
+        <div class="cert-grid reveal">
+                            <div class="cert-card">
+                    <div class="cert-icon"><i class="bi bi-pc-display"></i></div>
+                    <div class="cert-info">
+                        <h4> PHP &amp; MYSQL Web Development</h4>
+                        <p> Coursera • 2024</p>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+        <div class="section-title reveal">
+            <h2>تماس با من</h2>
+            <p>آماده شنیدن پیشنهادات شما هستم</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info reveal">
+                <h3>بیایید با هم <span>صحبت کنیم</span></h3>
+                <p>اگر به دنبال یک برنامه‌نویس باانگیزه، متعهد و باتجربه هستید، خوشحال می‌شم که در پروژه شما مشارکت کنم.</p>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                    <div class="contact-detail">
+                        <h4>آدرس</h4>
+                        <p> تهران </p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="bi bi-briefcase-fill"></i></div>
+                    <div class="contact-detail">
+                        <h4>فریلنسری</h4>
+                        <p>پروژه‌های فریلنسری را می‌پذیرم</p>
+                    </div>
+                </div>
+                <div>
+                    &nbsp;
+                </div>
+            </div>
+            <div class="contact-form reveal">
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+                    <div class="contact-detail">
+                        <h4>ایمیل</h4>
+                        <p id="email-size"> danialjamshidi8877@gmail.com </p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+                    <div class="contact-detail">
+                        <h4>تلفن</h4>
+                        <p dir="ltr"> 09233233725 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <p>طراحی و توسعه با ❤️ توسط <a class="gold" href="tel: 09233233725 "> دانیال  جمشیدی </a> © ۱۴۰۴</p>
+    </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" title="بازگشت به بالا"><i class="bi bi-chevron-up"></i></button>
+
+<script src="./assets/js/bundle.min.js"></script>
+<script src="./assets/pwa/pwa.js"></script>
+  <script type="text/javascript">
+    ["keydown", "touchmove", "touchstart", "mouseover"].forEach(function(v) {
+      window.addEventListener(v, function() {
+        if (!window.isGoftinoAdded) {
+          window.isGoftinoAdded = 1;
+          var i = "3yT6RF",
+            d = document,
+            g = d.createElement("script"),
+            s = "https://www.goftino.com/widget/" + i,
+            l = localStorage.getItem("goftino_" + i);
+          g.type = "text/javascript", g.async = !0, g.src = l ? s + "?o=" + l : s;
+          d.getElementsByTagName("head")[0].appendChild(g);
+        }
+      })
+    });
+  </script>
+</body>
+
+</html>

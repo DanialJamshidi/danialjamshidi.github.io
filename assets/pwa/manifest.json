@@ -1,0 +1,46 @@
+{
+  "name": "Danial J",
+  "short_name": "دانیال جمشیدی",
+  "description": "برنامه‌نویس وب و توسعه‌دهنده فول‌استک",
+  "start_url": "/?mode=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "dir": "rtl",
+  "lang": "fa",
+  "orientation": "portrait",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/assets/images/icons/icon-6.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/icons/icon-6.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/icons/icon-6.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/icons/icon-6.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/icons/icon-6.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/icons/icon-6.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

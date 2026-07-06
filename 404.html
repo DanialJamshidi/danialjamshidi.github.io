@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>با مشکل مواجه شدید</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/icons/icon-6.png"
+      type="image/x-icon"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      body {
+        background: #0a0a0a;
+        color: #fff;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 600px;
+      }
+
+      .code {
+        font-size: 8rem;
+        font-weight: bold;
+        background: linear-gradient(45deg, #d4af37, #f7ef8a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 10px;
+      }
+
+      .title {
+        font-size: 2rem;
+        color: #d4af37;
+        margin-bottom: 15px;
+      }
+
+      .desc {
+        color: #aaa;
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+
+      .btn {
+        display: inline-block;
+        background: #d4af37;
+        color: #000;
+        padding: 12px 30px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: transform 0.3s;
+      }
+
+      .btn:hover {
+        transform: translateY(-3px);
+      }
+
+      .gold-line {
+        height: 2px;
+        width: 100px;
+        background: #d4af37;
+        margin: 20px auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="code">404</div>
+      <div class="gold-line"></div>
+      <h1 class="title">صفحه مورد نظر یافت نشد</h1>
+      <p class="desc">
+        متأسفانه صفحه‌ای که به دنبال آن هستید وجود ندارد یا حذف شده است.
+      </p>
+      <a onclick="return history.back();" class="btn">بازگشت </a>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const codeElement = document.querySelector(".code");
+        setInterval(() => {
+          codeElement.style.opacity =
+            codeElement.style.opacity === "0.8" ? "1" : "0.8";
+        }, 800);
+      });
+    </script>
+  </body>
+</html>
